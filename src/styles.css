@@ -1,0 +1,16 @@
+.profile .profilephoto {
+  border-radius: 100% ;
+}
+
+.profile p {
+  color:cadetblue;
+}
+.profile body {
+  background-color: beige;
+}
+
+
+.profile .bioHeader {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22pt;
+}
