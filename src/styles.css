@@ -9,6 +9,10 @@
   background-color: beige;
 }
 
+.profile p:hover {
+  color: #000000;
+  font-size:large;
+}
 
 .profile .bioHeader {
   font-family: 'Times New Roman', Times, serif;
