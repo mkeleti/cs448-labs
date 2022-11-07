@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="text-start">
+      <a href="index.html">
+        <button type="button" class="btn btn-lg btn-secondary">Home</button>
+      </a>
+    </div>
+    <div class="container text-center">
+      <h1 class="text-center h1">CSS Manipulation</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <p id="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Condimentum mattis pellentesque id nibh tortor id aliquet lectus.
+              Est placerat in egestas erat. Quis hendrerit dolor magna eget est
+              lorem ipsum. Gravida cum sociis natoque penatibus et magnis dis.
+              Eget magna fermentum iaculis eu non diam phasellus vestibulum
+              lorem. Imperdiet massa tincidunt nunc pulvinar sapien et ligula
+              ullamcorper. Diam maecenas ultricies mi eget. Risus viverra
+              adipiscing at in. Fringilla est ullamcorper eget nulla.
+              Ullamcorper velit sed ullamcorper morbi tincidunt ornare. Et netus
+              et malesuada fames. Sit amet consectetur adipiscing elit duis
+              tristique. Gravida arcu ac tortor dignissim convallis aenean et
+              tortor. Nulla malesuada pellentesque elit eget gravida cum sociis
+              natoque. Nulla porttitor massa id neque aliquam vestibulum morbi
+              blandit. Ipsum consequat nisl vel pretium lectus quam id leo.
+              Posuere lorem ipsum dolor sit amet consectetur. Nisl pretium fusce
+              id velit ut. Tellus in hac habitasse platea. Quam elementum
+              pulvinar etiam non quam lacus suspendisse. Semper feugiat nibh sed
+              pulvinar proin gravida hendrerit. Eu facilisis sed odio morbi
+              quis. Amet mattis vulputate enim nulla aliquet porttitor. Velit
+              laoreet id donec ultrices tincidunt arcu non sodales neque.
+              Sollicitudin nibh sit amet commodo. Sed tempus urna et pharetra
+              pharetra. Feugiat scelerisque varius morbi enim nunc faucibus a
+              pellentesque sit. Tincidunt nunc pulvinar sapien et ligula. Nisl
+              vel pretium lectus quam id. Mi bibendum neque egestas congue.
+              Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.
+            </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 ms-1">
+          <div class="row">
+          <h5>Border</h5>
+          <div class="row">
+          <div class="col-md-4 mx-0">
+          <h6>Red</h6>
+          <input
+            name="pass2"
+            type="text"
+            class="form-control"
+            id="border-red"
+            value="0"
+            placeholder="255"
+          />
+        </div>
+        <div class="col-md-4">
+          <h6>Green</h6>
+          <input
+            name="pass2"
+            type="text"
+            class="form-control"
+            id="border-green"
+            value="0"
+            placeholder="255"
+          />
+        </div>
+        <div class="col-md-4">
+          <h6>Blue</h6>
+          <input
+            name="pass2"
+            type="text"
+            class="form-control"
+            id="border-blue"
+            value="0"
+            placeholder="255"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 mx-auto mt-2">
+          <h6>Width</h6>
+          <input
+            name="pass2"
+            type="text"
+            value="1"
+            class="form-control"
+            id="border-width"
+            placeholder="0"
+          />
+        </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <h5>Background Color</h5>
+        <div class="row">
+        <div class="col-md-4 mx-0">
+        <h6>Red</h6>
+        <input
+          name="pass2"
+          type="text"
+          class="form-control"
+          id="back-red"
+          value="255"
+          placeholder="255"
+        />
+      </div>
+      <div class="col-md-4">
+        <h6>Green</h6>
+        <input
+          name="pass2"
+          type="text"
+          class="form-control"
+          id="back-green"
+          value="255"
+          placeholder="255"
+        />
+      </div>
+      <div class="col-md-4">
+        <h6>Blue</h6>
+        <input
+          name="pass2"
+          type="text"
+          class="form-control"
+          value="255"
+          id="back-blue"
+          placeholder="255"
+        />
+      </div>
+    </div>
+    </div>
+        </div>
+        </div>
+      </div>
+      <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script>
+        let text = document.getElementById("text");
+        let borderRed = document.getElementById("border-red");
+        let borderGreen = document.getElementById("border-green");
+        let borderBlue = document.getElementById("border-blue");
+        let borderWidth = document.getElementById("border-width");
+        let backRed = document.getElementById("back-red");
+        let backGreen = document.getElementById("back-green");
+        let backBlue = document.getElementById("back-blue");
+        borderRed.addEventListener("input", function () {
+          text.style.border = `${borderWidth.value}px solid rgb(${borderRed.value},${borderGreen.value},${borderBlue.value})`;
+        });
+        borderGreen.addEventListener("input", function () {
+          text.style.border = `${borderWidth.value}px solid rgb(${borderRed.value},${borderGreen.value},${borderBlue.value})`;
+        });
+        borderBlue.addEventListener("input", function () {
+          text.style.border = `${borderWidth.value}px solid rgb(${borderRed.value},${borderGreen.value},${borderBlue.value})`;
+        });
+        borderWidth.addEventListener("input", function () {
+          text.style.border = `${borderWidth.value}px solid rgb(${borderRed.value},${borderGreen.value},${borderBlue.value})`;
+        });
+        backRed.addEventListener("input", function () {
+          text.style.backgroundColor = `rgb(${backRed.value},${backGreen.value},${backBlue.value})`;
+        });
+        backGreen.addEventListener("input", function () {
+          text.style.backgroundColor = `rgb(${backRed.value},${backGreen.value},${backBlue.value})`;
+        });
+        backBlue.addEventListener("input", function () {
+          text.style.backgroundColor = `rgb(${backRed.value},${backGreen.value},${backBlue.value})`;
+        });
+        
+      </script>
+    </div>
+  </body>
+</html>
