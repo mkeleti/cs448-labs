@@ -22,30 +22,31 @@
 
   $sum = (int) $shipping[0] + (int) $shifty[0] * (int) $shifty[2] + (int) $cat3[0]  * (int) $cat3[2] + (int) $lazy[0] * (int) $lazy[2];
 
-  $items = [$shipping, $shifty, $cat3, $lazy];
+  $items = [ $shifty, $cat3, $lazy];
 
   echo "<table class='table table-striped col-md-2'>";
   echo "
   <tr>
-    <th>Item</th>
+    <th></th>
     <th>Quantity</th>
-    <th>Price</th>
-    <th>Price</th> 
+    <th>Cost Per Item</th>
+    <th>Subtotal</th> 
   </tr>";
-  for ($i = 0; $i < 4; $i++) {
+  for ($i = 0; $i < 3; $i++) {
     $current = $items[$i];
     echo "<tr>";
     if ($current[0] == 0) {
     } else {
       echo "<td>$current[1]</td>";
-      echo "<td>\$$current[0]</td>";
-      echo "<td>$current[2]</td>";
+      echo "<td>$current[0]</td>";
+      echo "<td>\$$current[2]</td>";
       $price = (int) $current[0] * (int) $current[2];
       echo "<td>\$$price</td>";
     }
     echo "</tr>";
   }
-  echo "<tr><td>Total: </td><td>\$$sum</td></tr>";
+  echo "<tr><td>Shipping: </td><td></td><td></td><td>\$$shipping[0]</td></tr>";
+  echo "<tr><td>Total Cost: </td><td>\$$sum</td></tr>";
   echo "</table>";
   ?>
 </body>
