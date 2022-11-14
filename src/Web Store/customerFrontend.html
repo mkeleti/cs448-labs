@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cat Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/bootstrap/css/bootstrap.min.css"
+    />
+    <script src="../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="text-start">
+      <a href="../../index.html">
+        <button type="button" class="btn btn-lg btn-secondary">
+         Home
+        </button>
+      </a>
+    </div>
+    <div class="container-fluid text-center">
+      <h1 class="text-center h1">The Cat Store</h1>
+      <h3>"We Sell Cats!"</h3>
+      <div class="row">
+        <div class="col-md-8 mx-2">
+          <div class="card">
+            <div class="card-body">
+              <h3>Buy your cat</h3>
+              <br />
+              <form onsubmit="return Validate();" action="customerBackend.php" method="post" id="mainForm">
+                <div class="row">
+                  <div class="col-md-12 mx-1 border">
+                    <p><b>Select your cat</b></p>
+                    <div class="row">
+                      <div class="card col-md-4">
+                        <img
+                          src="../../assets/cat1.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">3 Cat</h5>
+                          <p class="card-text">They are furry<br />Price: 5$</p>
+                          <div class=" text-start">
+                            <input
+                              class="form-check-input"
+                              name="cat3"
+                              id="3cat"
+                            />
+                            <label
+                              class="form-check-label mt-auto"
+                              for="flexCheckDefault"
+                            >
+                              Quantity
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card col-md-4">
+                        <img
+                          src="../../assets/cat2.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Shifty Cat</h5>
+                          <p class="card-text">Furry, likes to press shift. Disable sticky keys before buying<br />Price: 7$</p>
+                          <div class="form-check text-start">
+                            <input
+                              class="form-check-input"
+                              name="shifty"
+                              id="shiftycat"
+                            />
+                            <label
+                              class="form-check-label mt-auto"
+                              for="flexCheckDefault"
+                            >
+                              Quantity
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card col-md-4">
+                        <img
+                          src="../../assets/cat3.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Lazy Cat</h5>
+                          <p class="card-text">This cat is very lazy. Great for stock photography.<br />Price: 15$</p>
+                          <div class="form-check text-start">
+                            <input
+                              class="form-check-input"
+                              name="lazy"
+                              id="lazycat"
+                            />
+                            <label
+                              class="form-check-label mt-auto"
+                              for="flexCheckDefault"
+                            >
+                              Quantity
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 mx-1 border">
+                    <p><b>Login</b></p>
+                    Username: <input type="text" name="username" id="username"/><br /><br />
+                    Password:
+                    <input type="username" id="pass" name="password" /><br /><br />
+                  </div>
+                  <div class="col-md-3 mx-1 border">
+                    <p><b>Select Shipping</b></p>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="shipping" value="7" id="ShippingOption1">
+                      <label class="form-check-label" for="ShippingOption1">
+                        Free 7 Day Shipping
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="shipping" id="ShippingOption2" value="50" checked>
+                      <label class="form-check-label" for="ShippingOption2">
+                        50$ Overnight Shipping
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="shipping" id="ShippingOption3" value="5" checked>
+                      <label class="form-check-label" for="ShippingOption3">
+                        5$ Three Day Shipping
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mx-1 border">
+                    <p><b>Select Shipping</b></p>
+                    <input
+                    class="btn btn-lg mx-1 btn-outline-primary"
+                    type="submit"
+                    value="Checkout"
+                    />
+                    <input
+                    class="btn btn-lg mx-1 btn-outline-secondary"
+                    type="reset"
+                    value="Reset"
+                    />
+                  </div>
+                </div>
+                <br />
+
+              </form>
+              <script src="formChecker.js"></script>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <p>
+                <b>Testimonials</b><br />
+                John Doe: "I bought a cat from this store and it was the best
+                cat I've ever had!"<br />
+                Jane Doe: "Wish it came with more RAM, keeps forgetting to
+                eat."<br />
+                Jane Smith: "The three for one deal is a steal."<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
