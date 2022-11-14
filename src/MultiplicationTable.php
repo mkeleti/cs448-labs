@@ -13,7 +13,7 @@ function GenerateTable($x, $y)
    for ($i = 0; $i < $x; $i++) {
       echo "<tr>";
       for ($j = 0; $j < $y; $j++) {
-         echo "<td style='font-size: 7px'>";
+         echo "<td style='font-size: 5px'>";
          echo $values[$i][$j];
          echo "</td>";
       }

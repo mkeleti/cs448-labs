@@ -14,7 +14,9 @@
         <button type="button" class="btn btn-lg btn-secondary">Home</button>
       </a>
     </div>
+    <div class="container text-center">
       <h1 class="text-center h1">Multiplication Table</h1>
       <?php include './MultiplicationTable.php'; ?>
+    </div>
   </body>
 </html>
